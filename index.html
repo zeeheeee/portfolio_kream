@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>KREAM</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <!-- header 시작 -->
+    <header class="desktop">
+        <div class="hd_left">
+            <div class="hd_logo">
+                <!-- 상단 로고 -->
+                <a href="index.html"><img src="img/KREAM_logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <!-- 상단 네비바 -->
+                <ul>
+                    <li><a href="index.html">MAIN</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">MAGAZINE</a></li>
+                    <li><a href="#">STYLE</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <div class="flex-g"></div>
+                    <div class="main_search">
+                        <form action="" autocomplete="on">
+                            <input id="search" name="search" type="text" placeholder="찾으시는 상품명 혹은 브랜드를 검색하세요.">
+                            <button id="search_submit" type="submit" class="search-button">
+                                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </button>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <div class="hd_right">
+            <div class="icon">
+                <span><i class="fa-solid fa-user" style="color: #000000;"></i></span> <!-- user page -->
+                <span><i class="fa-solid fa-heart" style="color: #000000;"></i></span> <!-- my like -->
+                <span><i class="fa-solid fa-bag-shopping" style="color: #000000;"></i></span> <!-- shopping bag -->
+                <span><i class="fa-solid fa-arrow-right-to-bracket" style="color: #000000;"></i></span>
+                <!-- login/logout -->
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile header -->
+    <header class="mobile">
+        <a href="#" class="mobile_logo"><img src="mobile_img/KREAM_logo_w.png" alt="logo"></a>
+        <a href="#" class="mobile_menu_btn"><img src="mobile_img/menu.png" alt="menu_btn"></a>
+        <div class="mobile_menu">
+            <div class="mobile_menu_icon">
+                <span class="close"><i class="fa-solid fa-xmark fa-2xl" style="color: #333;"></i></span>
+                <span class="search"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #333;"></i></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">MAIN</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">MAGAZINE</a></li>
+                    <li><a href="#">STYLE</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- header 끝 -->
+
+    <!-- 메인 시작 -->
+    <main class="desktop">
+        <div class="main_img">
+            <img src="img/main/Main.png" alt="메인이미지">
+        </div>
+        <!-- fashion -->
+        <div class="fashion_wrap">
+            <div class="fashion_text">
+                <h6 class="mini_new_title">LATEST SUMMER COLLECTION</h6>
+                <div class="new_title">
+                    <h1>BEST STYLING</h1>
+                    <h6>LATEST SUMMER</h6>
+                </div>
+            </div>
+            <div class="fashion">
+                <div class="fashion_group">
+                    <div class="box">
+                        <div class="box_img b1">
+                            <div class="pro">
+                                <img src="./img/main/profile3.jpeg" alt="">
+                                <div>@antmousbe9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_img b2">
+                            <div class="pro">
+                                <img src="./img/main/profile2.jpeg" alt="">
+                                <div>@classictype07</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_img b3">
+                            <div class="pro">
+                                <img src="./img/main/profile1.jpeg" alt="">
+                                <div>@nan_bee_</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_img b4">
+                            <div class="pro">
+                                <img src="./img/main/profile4.jpeg" alt="">
+                                <div>@oliverskip</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_img b5">
+                            <div class="pro">
+                                <img src="./img/main/profile5.jpeg" alt="">
+                                <div>@suj_q</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article class="wrapper">
+                <div class="marquee">
+                    <div class="marquee__group">
+                        <img src="./img/main/slide_bg1.png" alt="">
+                        <img src="./img/main/slide_bg2.png" alt="">
+                        <img src="./img/main/slide_bg3.png" alt="">
+                        <img src="./img/main/slide_bg4.png" alt="">
+                        <img src="./img/main/slide_bg5.png" alt="">
+                        <img src="./img/main/slide_bg1.png" alt="">
+                        <img src="./img/main/slide_bg2.png" alt="">
+                        <img src="./img/main/slide_bg3.png" alt="">
+                    </div>
+
+                    <div aria-hidden="true" class="marquee__group">
+                        <img src="./img/main/slide_bg1.png" alt="">
+                        <img src="./img/main/slide_bg2.png" alt="">
+                        <img src="./img/main/slide_bg3.png" alt="">
+                        <img src="./img/main/slide_bg4.png" alt="">
+                        <img src="./img/main/slide_bg5.png" alt="">
+                        <img src="./img/main/slide_bg1.png" alt="">
+                        <img src="./img/main/slide_bg2.png" alt="">
+                        <img src="./img/main/slide_bg3.png" alt="">
+                    </div>
+                </div>
+            </article>
+        </div>
+
+
+        <!-- best 시작 -->
+        <!-- ul.cur>li.active*3>div{챕터 $}+ul>li*5>a[href=#]{아이템 $} -->
+        <div class="best_bg">
+            <div class="best_wrap_a">
+                <span class="btn_1">전체열기</span>
+
+                <hr>
+                <ul class="cur">
+                    <li class="active Mardi">
+                        <div>
+                            <div class="best_line best_line_2"></div>
+                            <div class="best_text_box best_text_box_1">
+                                <h2>Mardi Mercredi x Nardis</h2>
+
+                                <div class="more_arrow">
+                                    <img src="img/main/more_arrow2.png" alt="이미지">
+                                </div>
+                            </div>
+                            <div class="best_line best_line_2"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="best_list">
+                                    <img src="img/main/best_wrap_1.jpg" alt="이미지">
+                                    <div class="best_main_text_box">
+                                        <h1>HIKING COLLECTION</h1>
+                                        <h5>ABOUT THE COLLECTION </h5>
+                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et ipsum
+                                            incidunt in, qui unde
+                                            nesciunt mollitia quam,<br> aliquam tempore dolorum quo, eaque debitis
+                                            explicabo <br>sequi!
+                                            Accusamus, omnis quod!
+                                        </h6>
+                                        <div class="sub_list">
+                                            <div class="sub_box"><img src="img/main/best_wrap_1_item1.png"
+                                                    alt=""></div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_1_item2.png"
+                                                    alt=""></div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_1_item3.png"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <div>
+                            <div class="best_line best_line_2"></div>
+                            <div class="best_text_box best_text_box_1">
+                                <h2>Jordan 1 x Travis Scott Retro</h2>
+
+                                <div class="more_arrow">
+                                    <img src="img/main/more_arrow2.png" alt="이미지">
+                                </div>
+                            </div>
+                            <div class="best_line best_line_2"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="best_list">
+                                    <img src="img/main/best_wrap_2.png" alt="이미지">
+                                    <div class="best_main_text_box">
+                                        <h1>HIKING COLLECTION</h1>
+                                        <h5>ABOUT THE COLLECTION </h5>
+                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et ipsum
+                                            incidunt in, qui unde
+                                            nesciunt mollitia quam,<br> aliquam tempore dolorum quo, eaque debitis
+                                            explicabo <br>sequi!
+                                            Accusamus, omnis quod!</h6>
+                                        <div class="sub_list">
+                                            <div class="sub_box"><img src="img/main/best_wrap_2_item1.png"
+                                                    alt=""></div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_2_item2.png"
+                                                    alt=""></div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_2_item3.png"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <div>
+                            <div class="best_line best_line_2"></div>
+                            <div class="best_text_box best_text_box_1">
+                                <h2> Polo Ralph Lauren RL Fleece Logo</h2>
+
+                                <div class="more_arrow">
+                                    <img src="img/main/more_arrow2.png" alt="이미지">
+                                </div>
+                            </div>
+                            <div class="best_line best_line_2"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="best_list">
+                                    <img src="img/main/best_wrap_3.png" alt="이미지">
+                                    <div class="best_main_text_box">
+                                        <h1>HIKING COLLECTION</h1>
+                                        <h5>ABOUT THE COLLECTION </h5>
+                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et ipsum
+                                            incidunt in, qui unde
+                                            nesciunt mollitia quam,<br> aliquam tempore dolorum quo, eaque debitis
+                                            explicabo <br>sequi!
+                                            Accusamus, omnis quod!</h6>
+                                        <div class="sub_list">
+                                            <div class="sub_box"><img src="img/main/best_wrap_3_item1.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_3_item2.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_3_item3.png"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <div>
+                            <div class="best_line best_line_2"></div>
+                            <div class="best_text_box best_text_box_1">
+                                <h2>Cost per Kilo Summer 2024</h2>
+
+                                <div class="more_arrow">
+                                    <img src="img/main/more_arrow2.png" alt="이미지">
+                                </div>
+                            </div>
+                            <div class="best_line best_line_2"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="best_list">
+                                    <img src="img/main/best_wrap_4.png" alt="이미지">
+                                    <div class="best_main_text_box">
+                                        <h1>HIKING COLLECTION</h1>
+                                        <h5>ABOUT THE COLLECTION </h5>
+                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et ipsum
+                                            incidunt in, qui unde
+                                            nesciunt mollitia quam,<br> aliquam tempore dolorum quo, eaque debitis
+                                            explicabo <br>sequi!
+                                            Accusamus, omnis quod!</h6>
+                                        <div class="sub_list">
+                                            <div class="sub_box"><img src="img/main/best_wrap_4_item1.png"
+                                                    alt=""></div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_4_item2.png"
+                                                    alt=""></div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_4_item3.png"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <div>
+                            <div class="best_line best_line_2"></div>
+                            <div class="best_text_box best_text_box_1">
+                                <h2>Sienne Rita West Bag Sienne Mint</h2>
+
+                                <div class="more_arrow">
+                                    <img src="img/main/more_arrow2.png" alt="이미지">
+                                </div>
+                            </div>
+                            <div class="best_line best_line_2"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="best_list">
+                                    <img src="img/main/best_wrap_5.png" alt="이미지">
+                                    <div class="best_main_text_box">
+                                        <h1>HIKING COLLECTION</h1>
+                                        <h5>ABOUT THE COLLECTION </h5>
+                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et ipsum
+                                            incidunt in, qui unde
+                                            nesciunt mollitia quam,<br> aliquam tempore dolorum quo, eaque debitis
+                                            explicabo <br>sequi!
+                                            Accusamus, omnis quod!</h6>
+                                        <div class="sub_list">
+                                            <div class="sub_box"><img src="img/main/best_wrap_5_item1.png"
+                                                    alt=""></div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_5_item2.png"
+                                                    alt=""></div>
+                                            <div class="sub_box"><img src="img/main/best_wrap_5_item3.png"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- best 끝 -->
+
+        <!-- new 시작 -->
+        <div class="new_wrap">
+            <div class="new">
+                <h6 class="mini_new_title">LATEST SUMMER COLLECTION</h6>
+                <div class="new_title">
+                    <h1>NEW IN</h1>
+                    <h6>LATEST SUMMER</h6>
+                </div>
+                <div class="new_box">
+                    <div class="new_1_group">
+                        <div class="new_1">
+                            <img src="img/main/new_4.png" alt="이미지">
+                        </div>
+                        <h4>Asics</h4>
+                        <h6>Asics Gel-Kayano 14 White Midnight</h6>
+                    </div>
+                    <div class="new_1_group">
+                        <div class="new_1">
+                            <img src="img/main/new_1.png" alt="이미지">
+                        </div>
+                        <h4>Kashiko</h4>
+                        <h6>Kashiko Embroied Nonfade Denim</h6>
+                    </div>
+                    <div class="new_1_group">
+                        <div class="new_1">
+                            <img src="img/main/new_2.png" alt="이미지">
+                        </div>
+                        <h4>Supreme x Nike</h4>
+                        <h6>Supreme x Nike Ripstop Pullover</h6>
+                    </div>
+                    <div class="new_1_group">
+                        <div class="new_1">
+                            <img src="img/main/new_3.png" alt="이미지">
+                        </div>
+                        <h4>Palace</h4>
+                        <h6>Palace Faster Jacket Navy White</h6>
+                    </div>
+                    <div class="new_1_group">
+                        <div class="new_1">
+                            <img src="img/main/new_5.png" alt="이미지">
+                        </div>
+                        <h4>Basketcase</h4>
+                        <h6>Basketcase Metal V2 Hat Black</h6>
+                    </div>
+                    <div class="new_1_group">
+                        <div class="new_1">
+                            <img src="img/main/new_6.png" alt="이미지">
+                        </div>
+                        <h4>Polyteru</h4>
+                        <h6>Polyteru HANK 1/2 Graphic T-Shirt </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- new 끝 -->
+
+        <!-- 배너 시작 -->
+        <div class="ad"><img src="img/main/main_banner1.webp" alt="이미지"></div>
+        <!-- 배너 끝 -->
+
+        <!-- style 시작 -->
+        <div class="style">
+            <div class="style_title_box">
+                <div class="title">
+                    <h6 class="mini_new_title">Pre-Fall Collection</h6>
+                    <h1 class="matinKim">Matin Kim</h1>
+                    <h1 class="Pre-Fall">2024 Pre-Fall Collection</h1>
+                    <h1>To Be Continued</h1>
+                </div>
+                <h6 class="sub">The KREAM will be opening soon. <br>Stay tuned for the upcoming launch.</h6>
+            </div>
+            <div class="style_box">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall7.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall8.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main/Pre-Fall9.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- style 끝 -->
+
+        <!-- brand 시작 -->
+        <div class="brand_title">
+            <h1 class="KREAM">KREAM</h1>
+            <h1 class="with">with</h1>
+        </div>
+        <div class="brand">
+            <div class="slider-container">
+                <div class="slider slider-top">
+                    <div class="slider-track" id="roller1">
+                        <img src="img/main/logo_nike.png" alt="logo">
+                        <img src="img/main/logo_newbalance.png" alt="logo">
+                        <img src="img/main/logo_needles.png" alt="logo">
+                        <img src="img/main/logo_bape.png" alt="logo">
+                        <img src="img/main/logo_supreme.png" alt="logo">
+                        <img src="img/main/logo_adidas.png" alt="logo">
+                        <img src="img/main/logo_nike.png" alt="logo">
+                        <img src="img/main/logo_newbalance.png" alt="logo">
+                        <img src="img/main/logo_needles.png" alt="logo">
+                        <img src="img/main/logo_bape.png" alt="logo">
+                        <img src="img/main/logo_supreme.png" alt="logo">
+                        <img src="img/main/logo_adidas.png" alt="logo">
+                        <img src="img/main/logo_nike.png" alt="logo">
+                        <img src="img/main/logo_newbalance.png" alt="logo">
+                        <img src="img/main/logo_needles.png" alt="logo">
+                        <img src="img/main/logo_bape.png" alt="logo">
+                        <img src="img/main/logo_supreme.png" alt="logo">
+                        <img src="img/main/logo_adidas.png" alt="logo">
+                    </div>
+                </div>
+                <div class="slider slider-bottom">
+                    <div class="slider-track" id="roller2">
+                        <img src="img/main/logo_iabstudio.png" alt="logo">
+                        <img src="img/main/logo_jordan.png" alt="logo">
+                        <img src="img/main/logo_carhartt.png" alt="logo">
+                        <img src="img/main/logo_chromeheart.png" alt="logo">
+                        <img src="img/main/logo_palace.png" alt="logo">
+                        <img src="img/main/logo_humanmade.png" alt="logo">
+                        <img src="img/main/logo_iabstudio.png" alt="logo">
+                        <img src="img/main/logo_jordan.png" alt="logo">
+                        <img src="img/main/logo_carhartt.png" alt="logo">
+                        <img src="img/main/logo_chromeheart.png" alt="logo">
+                        <img src="img/main/logo_palace.png" alt="logo">
+                        <img src="img/main/logo_humanmade.png" alt="logo">
+                        <img src="img/main/logo_iabstudio.png" alt="logo">
+                        <img src="img/main/logo_jordan.png" alt="logo">
+                        <img src="img/main/logo_carhartt.png" alt="logo">
+                        <img src="img/main/logo_chromeheart.png" alt="logo">
+                        <img src="img/main/logo_palace.png" alt="logo">
+                        <img src="img/main/logo_humanmade.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.onload = function () {
+                const topTrack = document.getElementById('top-track');
+                const bottomTrack = document.getElementById('bottom-track');
+
+                function duplicateLogos(track, times) {
+                    let content = track.innerHTML;
+                    for (let i = 0; i < times - 1; i++) {
+                        track.innerHTML += content; // Duplicate logos to ensure seamless scrolling
+                    }
+                }
+
+                duplicateLogos(topTrack, 40);
+                duplicateLogos(bottomTrack, 40);
+            }
+
+
+        </script>
+        <!-- brand 끝 -->
+    </main>
+
+    <!-- mobile contents -->
+    <div class="mobile_top_slide mobile">
+        <div class="slider">
+            <img src="mobile_img/slider1.png" alt="slide1">
+            <div class="text">
+                <h3>한정판 거래의 FLEX</h3>
+                <span>KREAM APP에서 만나보세요.</span>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="mobile_img/slider2.jpg" alt="slide2">
+            <div class="text">
+                <h3>편안하고 대담한 실루엣</h3>
+                <span>특유의 편안함은 물론, 다채로운 컬러와 대담한 실루엣이 돋보이는 캠퍼의 24FW.</span>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="mobile_img/slider3.png" alt="slide3">
+            <div class="text">
+                <h3>신규 가입하고 가뿐하게 FLEX</h3>
+                <span>KREAM이 처음인 당신을 위한 혜택</span>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="mobile_img/slider4.jpg" alt="slide4">
+            <div class="text">
+                <h3>[KREAM]에서 에어조던1을 사고 파는 가장 힙한 방법</h3>
+                <span>KREAM YOUTUBE에서 바로 확인해 보세요.</span>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="mobile_img/slider5.png" alt="slide5">
+            <div class="text">
+                <h3>내가 사용하던 폰도 KREAM에서 판매</h3>
+                <span>개인정보 걱정없이 투명하고 좋은 가격으로</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="contents mobile">
+        <!-- 상단 컨텐츠 -->
+        <div class="mobile_top_ct">
+            <h3>What's in my KREAM</h3>
+            <div class="user">
+                <div class="user_img">
+                    <img src="mobile_img/whats_user.jpeg" alt="user_img">
+                </div>
+                <div class="user_id">
+                    <span>ho_jxng</span>
+                    <span>5시간 전</span>
+                </div>
+                <span class="follow">팔로우</span>
+                <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+            </div>
+            <div class="whats_img">
+                <img src="mobile_img/whats_img1.png" alt="whats1">
+            </div>
+            <div class="whats_card">
+                <div class="item_card">
+                    <img src="mobile_img/whats_item1.png" alt="whats_item1">
+                    <div class="whats_txt">
+                        <span>Nike Air Foamposite One Black Anthracite</span>
+                        <span>302,000원</span>
+                    </div>
+                </div>
+                <div class="item_card">
+                    <img src="mobile_img/whats_item2.png" alt="whats_item2">
+                    <div class="whats_txt">
+                        <span>Stussy Fuzzy Dice Keychain Teal</span>
+                        <span>165,000원</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 컨텐츠 1 // 베스트아이템 -->
+        <div class="mobile_ct_1">
+            <div class="best_item">
+                <img src="mobile_img/best_item_banner1.png" alt="best_item">
+                <h3>ADSB 앤더슨벨 24FW 1차 드랍</h3>
+                <span>늘 관습을 벗어나 독특하면서도 예상치 못한 아름다움을 찾아내는 앤더슨벨.
+                    그들을 통해 새로운 아이디어가 피어나는 순간을 느껴보세요.</span>
+                <div class="item_list">
+                    <hr>
+                    <div class="item">
+                        <img src="mobile_img/best_item1_top.jpg" alt="item_img">
+                        <div class="text">
+                            <h2>ADSB 앤더슨벨</h2>
+                            <span class="item_name">ADSB Andersson Bell Essential Unisex Adsb Milan Embroidery
+                                Sweatshirts Black</span>
+                            <span>178,000원</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <hr>
+                    <div class="item">
+                        <img src="mobile_img/best_item1_pants.jpg" alt="item_img">
+                        <div class="text">
+                            <h2>ADSB 앤더슨벨</h2>
+                            <span class="item_name">ADSB Andersson Bell Unisex Trompe L'Oeil Printed Denim Pants
+                                Blue</span>
+                            <span>298,000원</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="best_item">
+                <img src="mobile_img/best_item_banner2.jpg" alt="best_item">
+                <h3>타임리스 클래식, 폴로 랄프 로렌</h3>
+                <span>뉴트럴한 컬러와 편안함을 갖춘 도시적인 아이템부터 프레피와 빈티지 스타일의 새로운 재해석까지.
+                    폴로 랄프 로렌의 24FW 신규 컬렉션을 KREAM에서 만나보세요.</span>
+                <div class="item_list">
+                    <hr>
+                    <div class="item">
+                        <img src="mobile_img/best_item2_cap.png" alt="item_img">
+                        <div class="text">
+                            <h2>POLO RALPH LAUREN</h2>
+                            <span class="item_name">Polo Ralph Lauren Embroidered Corduroy Ball Cap Blue - 24FW</span>
+                            <span>139,000원</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <hr>
+                    <div class="item">
+                        <img src="mobile_img/best_item2_top.png" alt="item_img">
+                        <div class="text">
+                            <h2>POLO RALPH LAUREN</h2>
+                            <span class="item_name">Polo Ralph Lauren RL Fleece Logo Sweatshirt Cruise Navy -
+                                24FW</span>
+                            <span>239,000원</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <!-- 컨텐츠 2 // NEW IN -->
+        <div class="mobile_ct_2">
+            <div class="new_in">
+                <span class="fs14_bold">LATEST SUMMER COLLECTION</span>
+                <div class="top_txt">
+                    <h1>NEW IN</h1>
+                    <span class="fs14_bold">COLLECTION</span>
+                </div>
+            </div>
+            <div class="item_grid">
+                <div class="item">
+                    <img src="mobile_img/item1.png" alt="item_grid1">
+                    <span class="fs14_bold">Palace Faster Jacket Navy White - 24SS</span>
+                </div>
+                <div class="item">
+                    <img src="mobile_img/item2.png" alt="item_grid1">
+                    <span class="fs14_bold">(W) Asics Gel-Kayano 14 White Midnight</span>
+                </div>
+                <div class="item">
+                    <img src="mobile_img/item3.png" alt="item_grid1">
+                    <span class="fs14_bold">Basketcase Metal V2 Hat Black</span>
+                </div>
+                <div class="item">
+                    <img src="mobile_img/item4.png" alt="item_grid1">
+                    <span class="fs14_bold">Supreme x Nike Ripstop Pullover Black - 24SS</span>
+                </div>
+                <div class="item">
+                    <img src="mobile_img/item5.png" alt="item_grid1">
+                    <span class="fs14_bold">Polyteru HANK 1/2 Graphic T-Shirt 'devils 91' Bleached Black - 24SS</span>
+                </div>
+                <div class="item">
+                    <img src="mobile_img/item6.png" alt="item_grid1">
+                    <span class="fs14_bold">Kashiko Embroied Nonfade Denim Pants Black</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 컨텐츠 3 // 브랜드 -->
+        <div class="mobile_ct_3">
+            <div class="brand">
+                <span class="fs14_bold">LATEST SUMMER COLLECTION</span>
+                <div class="top_txt">
+                    <h1>BRAND</h1>
+                    <span class="fs14_bold">COLLECTION</span>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall1.jpg" alt="scroll1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall2.jpg" alt="scroll1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall3.jpg" alt="scroll1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall4.jpg" alt="scroll1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall5.jpg" alt="scroll1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall6.jpg" alt="scroll1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall7.jpg" alt="scroll1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall8.jpg" alt="scroll1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mobile_img/Pre-Fall9.jpg" alt="scroll1">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+
+        <!-- 컨텐츠 4 // KREAM with -->
+        <div class="mobile_ct_4">
+            <div class="KREAM_with">
+                <h3>KREAM <span>with</span></h3>
+                <div class="with_brand">
+                    <div class="slider-container">
+                        <div class="slider slider-top">
+                            <div class="slider-track" id="roller1">
+                                <img src="img/main/logo_nike.png" alt="logo">
+                                <img src="img/main/logo_newbalance.png" alt="logo">
+                                <img src="img/main/logo_needles.png" alt="logo">
+                                <img src="img/main/logo_bape.png" alt="logo">
+                                <img src="img/main/logo_supreme.png" alt="logo">
+                                <img src="img/main/logo_adidas.png" alt="logo">
+                                <img src="img/main/logo_nike.png" alt="logo">
+                                <img src="img/main/logo_newbalance.png" alt="logo">
+                                <img src="img/main/logo_needles.png" alt="logo">
+                                <img src="img/main/logo_bape.png" alt="logo">
+                                <img src="img/main/logo_supreme.png" alt="logo">
+                                <img src="img/main/logo_adidas.png" alt="logo">
+                            </div>
+                        </div>
+                        <div class="slider slider-bottom">
+                            <div class="slider-track" id="roller2">
+                                <img src="img/main/logo_iabstudio.png" alt="logo">
+                                <img src="img/main/logo_jordan.png" alt="logo">
+                                <img src="img/main/logo_carhartt.png" alt="logo">
+                                <img src="img/main/logo_chromeheart.png" alt="logo">
+                                <img src="img/main/logo_palace.png" alt="logo">
+                                <img src="img/main/logo_humanmade.png" alt="logo">
+                                <img src="img/main/logo_iabstudio.png" alt="logo">
+                                <img src="img/main/logo_jordan.png" alt="logo">
+                                <img src="img/main/logo_carhartt.png" alt="logo">
+                                <img src="img/main/logo_chromeheart.png" alt="logo">
+                                <img src="img/main/logo_palace.png" alt="logo">
+                                <img src="img/main/logo_humanmade.png" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 메인 끝 -->
+
+    <!-- 푸터시작 -->
+    <footer class="desktop">
+        <hr>
+        <div class="ft_top">
+            <div>
+                <span>이용안내</span>
+                <span>검수기준</span>
+                <span>이용정책</span>
+                <span>패널티 정책</span>
+                <span>커뮤니티 가이드라인</span>
+            </div>
+            <div>
+                <span>고객지원</span>
+                <span>공지사항</span>
+                <span>서비스 소개</span>
+                <span>스토어 안내</span>
+                <span>판매자 방문접수</span>
+            </div>
+            <div class="flex-g"></div>
+            <div class="cs">
+                <p>고객센터 1588-7813</p>
+                <p>운영시간 평일 10:00 - 18:00 (토·일, 공휴일 휴무)</p>
+                <p>점심시간 평일 13:00 - 14:00</p>
+                <p>1:1 문의하기는 앱에서만 가능합니다.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="ft_bottom">
+            <div class="ftbt_1">
+                <span>회사소개</span>
+                <span>인재채용</span>
+                <span>제휴제안</span>
+                <span>이용약관</span>
+                <span>개인정보처리방침</span>
+            </div>
+
+            <div class="ftbt_2">
+                <p>크림 주식회사 · 대표 김창욱</p>
+                <p>사업자등록번호 : 570-88-01618</p>
+                <span>사업자정보확인</span>
+            </div>
+            <div class="ftbt_2">
+                <p>통신판매업 : 제 2021-성남분당C-0093호</p>
+                <p>사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크윈 타워1, 8층</p>
+                <p>호스팅 서비스 : 네이버 클라우드 (주)</p>
+            </div>
+
+            <div class="ftbt_3">
+                <span>신한은행 채무지급보증 안내</span>
+                <br>
+                <p>당사는 고객님의 현금 결제 금액에 대해 신한은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
+                <a href="#">서비스가입 사실 확인</a>
+                <p>크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본 상품은 개별판매자가 등록한 상품으로 상품, 상품정보, 거래에 관한 의무와 책임은 각 판매자에게 있습니다. 단,
+                    이용약관 및 정책, 기타 거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는 내용에 대한 책임은 크림(주)에 있습니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="mobile">
+        <div class="top_txt">
+            <span>Kicks Rule Everything Around Me, KREAM</span>
+            <div class="top_btn">
+                <span>TOP</span>
+                <span>▲</span>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_ct">
+            <div class="ct1">
+                <span>회사소개</span>
+                <span>인재채용</span>
+                <span>이용약관</span>
+                <span>개인정보처리방침</span>
+            </div>
+            <div class="ct2">
+                <div class="sns">
+                    <div class="sns1">
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="sns2">
+                        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="sns3">
+                        <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="ct2_btn">
+                    <span>사업자정보</span>
+                    <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                </div>
+            </div>
+            <div class="ct3">
+                <span>크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본 상품은 개별판매자가 등록한 상품으로 상품, 상세정보, 거래에 관한 의무와 책임은 각 판매자에게 있습니다. 단.
+                    이용약관 및 정책, 기타 거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는 내용에 대한 책임은 크림(주) 에 있습니다.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터 끝 -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+<script src="main.js"></script>
+
+</html>
