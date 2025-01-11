@@ -349,7 +349,7 @@ main.desktop {
 }
 
 main.desktop>.main_img>img {
-    width: 100vw;
+    width: 100vw; height: 100vh;
     margin-left: calc(-50vw + 50%);
 }
 
